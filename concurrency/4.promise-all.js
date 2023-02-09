@@ -47,4 +47,8 @@ const makeEspresso = () => {
     })
 }
 
-makeEspresso()
+// makeEspresso()
+
+module.exports = {
+    boildWater, grindCoffee
+}

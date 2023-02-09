@@ -29,7 +29,7 @@ function checkStock() {
 function brewCoffee() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log('your ESSPRESSO IS READY !!')
+            resolve('your ESSPRESSO IS READY !!')
         }, 2000)
     })
 }
@@ -47,7 +47,7 @@ function makeEspresso() {
             return brewCoffee()
         })
         .then(readyCoffe => {
-            return readyCoffed
+            return readyCoffe
         })
         .catch(err => {
             console.log(err)
